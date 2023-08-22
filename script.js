@@ -1,28 +1,26 @@
-var bucketlist=[];
+var bucketList=[];
 
 var listItem = document.getElementById("list-container");
-function addvalues(){
-    let value = document.getElementById("input-field");
-    bucketlist.push(value);
-    showlist();
-}
+function addValues(){
+    let value = document.getElementById("input-field").value;
+    bucketList.push(value);
+    showList();
 
+}
 function remove(i){
-    bucketlist.splice(i,1);
-    showlist();
+    bucketList.splice(i,1);
+    showList();
 }
-
-function showlist(){
+function showList(){
     listItem.innerHTML="";
-    for(let i=0;i<bucketlist.length;i++){
+    for(let i=0;i<bucketList.length;i++){
         let li=document.createElement('li')
-        li.innerHTML=bucketlist[i]+'<span><img class="checked"remove('+i+')"scr="https://kq-storage.s3.ap-south-1.amazonaws.com/Github/bucketlist/tick-mark%5B1%5D.png"/></span>';
+        li.innerHTML=bucketList[i]+'<span><img class="checked"remove('+i+')" src="https://kq-storage.s3.ap-south-1.amazonaws.com/Github/bucketlist/tick-mark%5B1%5D.png"/></span>';
         li.className="list";
         listItem.appendChild(li);
     }
 }
-
 function reset(){
-    bucketlist=[];
-    showlist();
+    bucketList=[];
+    showList();
 }

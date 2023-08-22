@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Borel&family=Lato:ital@1&family=Poppins&family=Work+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Work+Sans&display=swap');
 body{
     background: url(https://kq-storage.s3.ap-south-1.amazonaws.com/Github/bucketlist/bucket-list-bg%5B1%5D.png);
     background-repeat: no-repeat;
     background-size: 100% 35vh;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-
 .container{
-    margin: 0px;
+    margin:0px;
     padding: 0px;
     text-align: center;
 }
@@ -26,24 +24,23 @@ body{
     height: 40px;
     border: 1px solid #f7be38;
     border-radius: 20px;
-    font: 18px;
+    font-size: 18px;
 }
-.input:focus, button:focus{
+input:focus, button:focus{
     outline: none;
 }
-
 .btn-submit{
     width: 5%;
     height: 45px;
     border-radius: 20px;
-    border-color: #f7be38;
+    background-color: solid #f7be38 ;
     font-weight: bold;
     position: absolute;
     margin-left: -4%;
     font-size: 18px;
-}
 
-.h2{
+}
+h2{
     font-size: 28px;
 }
 .hint{
